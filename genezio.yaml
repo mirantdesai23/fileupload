@@ -1,0 +1,27 @@
+backend:
+    functions:
+        - entry: index.mjs
+          handler: handler
+          name: function-express
+          path: .
+          type: httpServer
+    language:
+        name: js
+    path: ./backend/
+    scripts:
+        deploy:
+            - npm install
+        local:
+            - npm install
+frontend:
+    path: ./frontend/
+    publish: build
+    scripts:
+        build:
+            - npm run build
+        deploy:
+            - npm install
+    subdomain: fileupload
+name: fileupload
+region: us-east-1
+yamlVersion: 2
