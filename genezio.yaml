@@ -21,7 +21,7 @@ frontend:
             - npm run build
         deploy:
             - npm install
-    subdomain: fileupload
-name: fileupload
+    subdomain: fileupload1
+name: fileupload1
 region: us-east-1
 yamlVersion: 2
